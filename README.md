@@ -3,6 +3,8 @@ Allows embedding interactive Kotlin playground to [coursera](https://www.courser
 
 Plugin Current version: 0.0.1 :tada:
 
+<img width="1920" alt="screen shot 2018-08-08 at 1 57 26 pm" src="https://user-images.githubusercontent.com/10503748/43833322-0984b27c-9b13-11e8-94cf-41d7653217dd.png">
+
 ## Installation
 
 1. Download [latest release](https://github.com/AlexanderPrendota/kotlin-playground-coursera-plugin/releases).
