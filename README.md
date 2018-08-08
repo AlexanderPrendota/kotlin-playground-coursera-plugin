@@ -1,1 +1,2 @@
-# kotlin-playground-coursera-plugin
+# Kotlin Playground Coursera Plugin
+

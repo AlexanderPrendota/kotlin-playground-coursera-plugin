@@ -1,0 +1,29 @@
+{
+  "short_name": "Kotlin",
+  "name": "Kotlin Playground",
+  "description": "Enable a Kotlin Playground",
+  "maintainer": {
+    "name": "Alexander Prendota",
+    "email": "alexander.prendotal@jetbrains.com"
+  },
+  "version": "0.0.0",
+  "sandbox": "allow-presentation allow-scripts allow-same-origin",
+  "configurationExamples": [
+    {
+      "name": "Hello world!",
+      "configuration": {
+        "code": "fun main(args: Array<String>) {\n println(\"Hello world\")\n}"
+      }
+    }
+  ],
+  "authorizations": {},
+  "actionTypes": ["GET_SESSION_CONFIGURATION", "SET_HEIGHT"],
+  "macros": [],
+  "accessibility": {
+    "mobileCompatibility": {
+      "supportsTouch": true,
+      "minHeightPx": 0,
+      "minWidthPx": 0
+    }
+  }
+}
