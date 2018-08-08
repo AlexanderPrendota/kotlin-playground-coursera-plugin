@@ -1,7 +1,7 @@
 # Kotlin Playground Coursera 
 Allows embedding interactive Kotlin playground to [coursera](https://www.coursera.org/) lessons.
 
-Plugin Current version: 0.0.0 :tada:
+Plugin Current version: 0.0.1 :tada:
 
 ## Installation
 
