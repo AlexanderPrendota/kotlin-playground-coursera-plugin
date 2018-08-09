@@ -12,7 +12,10 @@
     {
       "name": "Hello world!",
       "configuration": {
-        "code": "fun main(args: Array<String>) {\n println(\"Hello world\")\n}"
+        "code": "fun main(args: Array<String>) {\n println(\"Hello world\")\n}",
+        "platform": "java",
+        "task": "We declare a package-level function main which returns Unit and takes\nan Array of strings as a parameter. Note that semicolons are optional.",
+        "head": "Hello World!"
       }
     }
   ],

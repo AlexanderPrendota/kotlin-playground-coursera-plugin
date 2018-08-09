@@ -1,0 +1,27 @@
+code {
+    display: none;
+}
+
+.playground {
+    margin: 10px;
+    font-family: 'OpenSans-Light', Arial, sans-serif;
+}
+
+.head {
+    text-align: center;
+    color: #27282c;
+    font-size: 2.125rem;
+    line-height: 2.625rem;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.task {
+    letter-spacing: normal;
+    white-space: pre-wrap;
+    margin-left: 20px;
+    color: #757575;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 15px;
+}
