@@ -1,9 +1,9 @@
 # Kotlin Playground Coursera 
-Allows embedding interactive Kotlin playground to [coursera](https://www.coursera.org/) lessons.
+Allows embedding interactive [Kotlin playground](https://github.com/JetBrains/kotlin-playground) to [coursera](https://www.coursera.org/) lessons.
 
 Plugin Current version: 0.0.1 :tada:
 
-<img width="1920" alt="screen shot 2018-08-08 at 1 57 26 pm" src="https://user-images.githubusercontent.com/10503748/43833322-0984b27c-9b13-11e8-94cf-41d7653217dd.png">
+<img width="1425" alt="screen shot 2018-08-09 at 1 07 00 pm" src="https://user-images.githubusercontent.com/10503748/43892659-2b0823bc-9bd5-11e8-989a-40e101a5703a.png">
 
 ## Installation
 
@@ -24,9 +24,20 @@ Find configuration panel on `Edit Configuration` and set code snippet:
 
 ```json
 {
-  "code": "fun main(args: Array<String>) {\n println(\"Hello world\")\n}"
+  "code": "fun main(args: Array<String>) {\n println(\"Hello world\")\n}",
+  "platform": "java",
+  "task": "We declare a package-level function main which returns Unit and takes\nan Array of strings as a parameter. Note that semicolons are optional.",
+  "head": "Hello World!"
 }
 ```
-* Default theme: `idea`.
-* Default platform: `JVM`.
-* Default kotlin version : [latest stable](https://try.kotlinlang.org/kotlinServer?type=getKotlinVersions) version.
+- Default theme: `idea`.
+- Default kotlin version : [latest stable](https://try.kotlinlang.org/kotlinServer?type=getKotlinVersions) version.
+
+Attributes:
+
+- `code`: kotlin code. **required**
+- `platrorm="java|js|canvas|junit"`: kotlin target compiler platform. **required**
+- `head`: text header of the code snippet. **optional**
+- `task`: text task description of the code snippet. **optional**
+
+More information about different attributes and markers see in [Kotlin Playground documentation](https://github.com/JetBrains/kotlin-playground/blob/master/README.md) 
