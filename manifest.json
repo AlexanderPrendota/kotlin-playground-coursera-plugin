@@ -6,7 +6,7 @@
     "name": "Alexander Prendota",
     "email": "alexander.prendotal@jetbrains.com"
   },
-  "version": "0.0.0",
+  "version": "0.1.0",
   "sandbox": "allow-presentation allow-scripts allow-same-origin",
   "configurationExamples": [
     {

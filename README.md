@@ -1,7 +1,7 @@
 # Kotlin Playground Coursera 
 Allows embedding interactive [Kotlin playground](https://github.com/JetBrains/kotlin-playground) to [coursera](https://www.coursera.org/) lessons.
 
-Plugin Current version: 0.0.1 :tada:
+Plugin Current version: 0.1.0 :tada:
 
 <img width="1425" alt="screen shot 2018-08-09 at 1 07 00 pm" src="https://user-images.githubusercontent.com/10503748/43892659-2b0823bc-9bd5-11e8-989a-40e101a5703a.png">
 
