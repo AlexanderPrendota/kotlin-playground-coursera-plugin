@@ -2,6 +2,14 @@ code {
     display: none;
 }
 
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
 .playground {
     margin: 10px;
     font-family: 'OpenSans-Light', Arial, sans-serif;

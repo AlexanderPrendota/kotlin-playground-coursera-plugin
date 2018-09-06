@@ -1,6 +1,8 @@
 const CONFIGURATION_PROPS = {
     PLATFORM: 'platform',
     HEAD: 'head',
+    RAW_HTML_BEFORE: 'raw-html-before',
+    RAW_HTML_AFTER: 'raw-html-after',
     TASK: 'task',
     CODE: 'code'
 };
@@ -22,10 +24,13 @@ function initiateApp(configuration) {
 
     if (configuration[CONFIGURATION_PROPS.HEAD]) buildHeader(configuration[CONFIGURATION_PROPS.HEAD]);
     if (configuration[CONFIGURATION_PROPS.TASK]) buildTask(configuration[CONFIGURATION_PROPS.TASK]);
+    if (configuration[CONFIGURATION_PROPS.RAW_HTML_BEFORE]) appendRawHtml(configuration[CONFIGURATION_PROPS.RAW_HTML_BEFORE]);
 
     const platform = configuration[CONFIGURATION_PROPS.PLATFORM];
     const code = configuration[CONFIGURATION_PROPS.CODE];
     if (platform && code) buildPlayground(code, platform);
+
+    if (configuration[CONFIGURATION_PROPS.RAW_HTML_AFTER]) appendRawHtml(configuration[CONFIGURATION_PROPS.RAW_HTML_AFTER]);
 
     KotlinPlayground(SELECTORS.CODE);
 }
@@ -36,6 +41,12 @@ function buildHeader(name) {
 
 function buildTask(text) {
     return buildNode(text, SELECTORS.TASK)
+}
+
+function appendRawHtml(stringHtml) {
+    const node = document.createElement('div');
+    node.innerHTML = stringHtml.trim();
+    document.body.appendChild(node)
 }
 
 function buildPlayground(code, platform) {
