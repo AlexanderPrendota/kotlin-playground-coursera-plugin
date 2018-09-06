@@ -1,3 +1,7 @@
+:root {
+    --coursera-plugin-left-margin: 20px
+}
+
 code {
     display: none;
 }
@@ -27,9 +31,14 @@ a:hover, a:active {
 .task {
     letter-spacing: normal;
     white-space: pre-wrap;
-    margin-left: 20px;
+    margin-left: var(--coursera-plugin-left-margin);
     color: #757575;
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 15px;
+}
+
+.solution-link {
+    font-size: 12px;
+    margin-left: var(--coursera-plugin-left-margin);
 }

@@ -4,12 +4,14 @@ const CONFIGURATION_PROPS = {
     RAW_HTML_BEFORE: 'raw-html-before',
     RAW_HTML_AFTER: 'raw-html-after',
     TASK: 'task',
+    LINK: 'link',
     CODE: 'code'
 };
 
 const SELECTORS = {
     HEAD: 'head',
     TASK: 'task',
+    SOLUTION: 'solution-link',
     CODE: 'code'
 };
 
@@ -19,6 +21,7 @@ const KOTLIN_PLAYGROUND_ATTRIBUTES = {
 };
 
 const DEFAULT_THEME = 'idea';
+const DEFAULT_LINK_TEXT = '[Solution]';
 
 function initiateApp(configuration) {
 
@@ -30,6 +33,7 @@ function initiateApp(configuration) {
     const code = configuration[CONFIGURATION_PROPS.CODE];
     if (platform && code) buildPlayground(code, platform);
 
+    if (configuration[CONFIGURATION_PROPS.LINK]) addLink(configuration[CONFIGURATION_PROPS.LINK]);
     if (configuration[CONFIGURATION_PROPS.RAW_HTML_AFTER]) appendRawHtml(configuration[CONFIGURATION_PROPS.RAW_HTML_AFTER]);
 
     KotlinPlayground(SELECTORS.CODE);
@@ -37,6 +41,15 @@ function initiateApp(configuration) {
 
 function buildHeader(name) {
     return buildNode(name, SELECTORS.HEAD)
+}
+
+function addLink(link) {
+    const node = document.createElement('a');
+    node.href = link;
+    node.className = SELECTORS.SOLUTION;
+    node.target = '_blank';
+    node.textContent = DEFAULT_LINK_TEXT;
+    document.body.appendChild(node)
 }
 
 function buildTask(text) {
