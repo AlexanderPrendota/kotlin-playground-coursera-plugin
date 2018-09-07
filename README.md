@@ -26,6 +26,7 @@ Find configuration panel on `Edit Configuration` and set code snippet:
 {
   "code": "fun main(args: Array<String>) {\n println(\"Hello world\")\n}",
   "platform": "java",
+  "link": "https://kotlinlang.org/",
   "task": "We declare a package-level function main which returns Unit and takes\nan Array of strings as a parameter. Note that semicolons are optional.",
   "head": "Hello World!"
 }
@@ -38,6 +39,7 @@ Attributes:
 - `code`: kotlin code. **required**
 - `platrorm="java|js|canvas|junit"`: kotlin target compiler platform. **required**
 - `head`: text header of the code snippet. **optional**
+- `link`: link with text `[Solution]` after playground. **optional**
 - `task`: text task description of the code snippet. **optional**
 
 More information about different attributes and markers see in [Kotlin Playground documentation](https://github.com/JetBrains/kotlin-playground/blob/master/README.md) 
